@@ -1,0 +1,14 @@
+img{
+    display: flex;
+    margin:1%;
+    margin-left: 5%;
+}
+.background{
+    width: 600px;
+    height: 600px;
+    background-color: black;
+    margin-left: 25%;
+}
+span{
+    color:white;
+}
