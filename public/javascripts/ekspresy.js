@@ -1,3 +1,4 @@
+//function to change background-color under Expres image
 function changeBackgroundColor()
 {
     if (document.querySelector('input') !== null)
@@ -15,33 +16,33 @@ function changeBackgroundColor()
         if (text.trim() === title1.trim())
         {
             div1.setAttribute("style", "background-color:red");
-        }else (text != title1)
+        }else 
         {
-           null   
+            div1.removeAttribute("style");
         };
 
         if (text.trim() === title2.trim())
         {
             div2.setAttribute("style", "background-color:green");
-        }else (text != title2)
+        }else 
         {
-           null   
+            div2.removeAttribute("style");   
         };
 
         if (text.trim() === title3.trim())
         {
             div3.setAttribute("style", "background-color:gray");
-        }else (text != title3)
+        }else 
         {
-           null   
+            div3.removeAttribute("style");  
         };
 
         if (text.trim() === title4.trim())
         {
             div4.setAttribute("style", "background-color:yellow");
-        }else (text != title4)
+        }else 
         {
-           null   
+            div4.removeAttribute("style");   
         };
         
     }

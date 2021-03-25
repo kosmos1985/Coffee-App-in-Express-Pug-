@@ -5,12 +5,13 @@ block content
     script(src='/javascripts/uslugi.js') 
     .container 
      div
-      textarea(id="theTextarea")
+      textarea
       br
-      button.btn.btn-default(type='submit') Submit
+      button.btn.btn-default(type='text')(onClick='saveText()') Pobierz plik
+       img(src='/images/pdf.png') 
       br
       span Pobierz plik z napisanym powyżej tekstem 
       br    
-      img(src='/images/pdf.png')
+      
       footer#footer
       p Copyright (c) KOSMOS
