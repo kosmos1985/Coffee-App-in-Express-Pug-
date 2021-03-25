@@ -1,15 +1,18 @@
-import { writeFile } from 'fs';
+
+const text = document.querySelector('textarea');
 
 function saveText()
 {
-    if (document.querySelector('textarea') !== null)
-    {
-        const text = document.querySelector('textarea').value;
-        console.log(text);
-        writeFile('text.pdf', text, (err) =>
-        {
-            if (err) throw err;
-            console.log('The file has been saved!');
-        });
-    };
+    const { jsPDF }  = require('jspdf');
+        const doc = new jsPDF();
+        doc.text(text, 10, 10);
+        doc.save('text.pdf');
+        // const fs = require('fs');
+        // // fs.write('text.pdf', text, (err) =>
+        // // {
+        // //     if (err) throw err;
+        // //     console.log('The file has been saved!');
+        // // });
+    
 };
+
