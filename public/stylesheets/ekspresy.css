@@ -8,7 +8,73 @@ img{
     height: 600px;
     background-color: black;
     margin-left: 25%;
+    position: relative;
+    cursor: move;
 }
 span{
     color:white;
+}
+.opis{
+    position: absolute;
+    background: rgba(0,0,0, 0.5);
+    bottom: 0px;
+    color: black;
+    width: 200px;
+    text-align: center;
+    padding: 5px 0px;
+    /* display: none; */
+}
+.info_cena{
+    margin-left: 8%;
+}
+.cena{
+    color: black;
+    margin-left: 1%;
+}
+/* koszyk */
+#naglowek_koszyka
+{
+    text-align: center;
+    font-size: 25px;
+}
+#kontener_koszyka
+{
+    position: fixed;
+    top: 4%;
+    right: 3.5%;
+    float: right;
+    background-color: #CCC;
+    width: 20%;
+    padding: 10px 5%;
+}
+#cena
+{
+    text-align: center;
+    margin: 2%;
+    padding: 2%;
+}
+#info_przeniesienie
+{
+    display: none;
+    font-size: 20px;
+    text-align: center;
+}
+#koszyk
+{
+    list-style: none;
+}
+
+.produkt_w_koszyku
+{
+    border-bottom: 1px dotted teal;
+    padding: 4px 10px;
+}
+.cena_w_koszyku
+{
+    position: absolute;
+    right: 20px;
+}
+#zl{
+    color: black;
+    margin-left: 3%;
 }

@@ -3,21 +3,55 @@ extends layout
     
 block content
   link(rel='stylesheet', href='/stylesheets/ekspresy.css')
-  script(src='/javascripts/ekspresy.js')  
+  script(src='http://code.jquery.com/jquery-1.7.2.min.js')
+  script(src='/javascripts/jquery.ndd.js')
+  script(src='/javascripts/modernizer.js')
+  script(src='/javascripts/ekspresy.js') 
+  script(src='/javascripts/script.js') 
   div.container
-     input(type='text', placeholder='wpisz nazwę ekspresu')(onkeyup='changeBackgroundColor()') 
-     div#ex1.background
+     input(type='text', placeholder='wpisz nazwę ekspresu')(onkeyup='changeBackgroundColor()')
+     aside#kontener_koszyka 
+       h2#naglowek_koszyka 
+       ul#koszyk
+       div#info_przeniesienie Przenieś przedmiot tutaj 
+       div#cena
+        b Razem:
+        span#zl 0.00 zł 
+     div#ex1.background(draggable=true)
       span#title1 Expres1     
       img(src='/images/expres1.jpg')
-     div#ex2.background
+      div.opis
+        h2.nazwa Expres1 
+        div.info_cena
+          b Cena: 
+          span.cena 346 zł
+
+     div#ex2.background(draggable=true)
       span#title2 Expres2
       img(src='/images/expres2.jpg')
-     div#ex3.background
+      div.opis
+        h2.nazwa Expres2 
+        div.info_cena
+          b Cena: 
+          span.cena 372 zł
+
+     div#ex3.background(draggable=true)
       span#title3 Expres3
       img(src='/images/expres3.jpg')
-     div#ex4.background
+      div.opis
+        h2.nazwa Expres3 
+        div.info_cena
+          b Cena: 
+          span.cena 453 zł
+
+     div#ex4.background(draggable=true)
       span#title4 Expres4
       img(src='/images/expres4.jpg')
+      div.opis
+        h2.nazwa Expres4 
+        div.info_cena
+          b Cena: 
+          span.cena 507 zł
 
   footer#footer
    p Copyright (c) KOSMOS
