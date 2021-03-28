@@ -6,9 +6,7 @@ var nodeMailer = require('nodemailer');
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Najlepsza kawa świata', zmienna:'Moja zmienna' });
 });
-// router.get('/ciasta/ciasto/:ciasto', function(req, res, next) {
-//   res.render('index', { title: 'Ciasta', zmienna: req.params.ciasto });
-// });
+
 router.get('/oferty', function(req, res, next) {
   res.render('oferty', { title: 'Oferty specjalne'});
 });

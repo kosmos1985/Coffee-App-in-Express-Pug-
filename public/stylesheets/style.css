@@ -1,3 +1,4 @@
+/* global application settings  */
 body {
   margin: 0;
   padding: 0;
@@ -24,6 +25,7 @@ div{
 .content{
   margin-left: 23%;
 }
+/* navigate to netx page */
 .menu-bar {
   border-radius: 25px;
   width: 40%;
@@ -68,6 +70,7 @@ a{
 a:hover{
   color:rgb(247, 165, 44);
 }
+/* images to top site  */
 img{
   width:500px;
   height: 500px;
